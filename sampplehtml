@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>KAZI'S PROFILE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+<style>
+body	{background-color:grey;}
+h2		{color:orange;text-align:center;}
+h3      {color:orange;text-align:center;}
+pre		{color:orange;text-align:left-side;font-size:130%;}
+a href	{color:white;text-align:right-side;}
+a:link {
+		color:white;
+		background-color:transparent;
+		text-decoration:underline;
+		}
+a:hover {
+		color:orange;
+		background-color:transparent;
+		text-decoration:underline;
+		}		
+a:active {
+		color:red;
+		background-color:transparent;
+		text-decoration:underline;
+		}
+		
+
+    
+</style>
+
+</head>
+
+<body>
+
+	<h2> MAHMUDUL H KAZI </h2>
+	<h3> Email: m_kazi@outlook.com, Phone: 571.721.8237 </h3>
+	<h3> Ashburn, VA-20147 </h3>
+<a href="http://ktech.com/server02/files" target="_blank">Click to upload Files !</a>
+	<hr>
+	
+<pre>
+	<p style="color:white;text-align:left-side"><ins>Summary:</ins></p>
+	
+•	Self starter with capability to work separately with strong problem solving skills and minimum supervision. 
+
+•	Highly skilled in maintaining, analyzing, troubleshoot, and repairing computers/laptops, hardware, software and peripherals. 
+
+•	Extremely reliable, quick learner and capable to perform well under pressure. 
+
+•	Hands-on experience in creating user accounts; including user rights, security and groups in Active Directory. 
+
+•	Exceptional logical and analytical problem solving skills. 
+
+•	Demonstrated ability to determine and recommend products or services suitable to the requirements. 
+
+•	Group effort and teamwork focused, highly energetic, motivated and responsible. 
+
+•	Profound ability to follow instructions and finish work assignments in an opportune manner. 
+
+   <p style="color:white;text-align:left-side"><ins>Education:</ins></p>
+•	B.C.S.I.R. High School – Dhaka, Bangladesh. 
+
+•	Diploma In Computer Hardware And Networking – Daffodil Institute of IT. Dhaka, Bangladesh. 
+
+   <p style="color:white;text-align:left-side"><ins>Certifications:</ins></p>
+•	MCP – Microsoft Certified Professional : Active Directory, Configuration 
+
+•	AWS Certified Technical Professional 
+
+•	VCA-DCV – VMware Certified Associate Datacenter Virtualization 
+
+•	VCA-CLOUD – VMware Certified Associate Cloud 
+
+•	Backup Academy Certified Professional on VM Backup and Recovery for VMware and Hyper-V.
+
+•	HP0-S40 – Building HP Server Solutions 
+
+•	1Z0-051 – Oracle Database 11g : SQL Fundamentals 1 
+
+
+
+</pre>
+	
+
+	
+	
+	
+	
+	
+</body>	
+</html>
