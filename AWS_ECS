@@ -1,0 +1,51 @@
+provider "aws" {
+  region     = "us-east-1"
+  access_key = "AKIATEKODW4IQ3LBKCUK"
+  secret_key = "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"
+}
+
+resource "aws_vpc" "ecs-vpc" {
+  cidr_block       = "10.0.0.0/24"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "ECS-VPC"
+  }
+}
+
+resource "aws_security_group" "allow_ecs" {
+  name        = "allow_ecs"
+  description = "To Configure ECS Rules"
+  vpc_id      = aws_vpc.ecs-vpc.id
+
+  ingress {
+    description = "Incoming Rules For ECS VPC"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = [aws_vpc.ecs-vpc.cidr_block]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "allow_ecs"
+  }
+}
+
+resource "aws_db_instance" "sample-test" {
+  allocated_storage    = 20
+  storage_type         = "gp2"
+  engine               = "postgresql"
+  templates			   = "Free tier"
+  engine_version       = "12.3-R1"
+  instance_class       = "db.t2.micro"
+  name                 = "mysampledb"
+  username             = "postgres"
+  password             = "$Usa12345"
+  parameter_group_name = "default.postgres12"
