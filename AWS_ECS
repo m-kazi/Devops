@@ -23,7 +23,9 @@ resource "aws_security_group" "allow_ecs" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = [aws_vpc.ecs-vpc.cidr_block]
+    cidr_blocks = [aws_vpc.ecs-vpc.cidr_block] 
+     /*or
+    "0.0.0.0/0" ( from any source) */
   }
 
   egress {
@@ -42,7 +44,6 @@ resource "aws_db_instance" "sample-test" {
   allocated_storage    = 20
   storage_type         = "gp2"
   engine               = "postgresql"
-  templates			   = "Free tier"
   engine_version       = "12.3-R1"
   instance_class       = "db.t2.micro"
   name                 = "mysampledb"
